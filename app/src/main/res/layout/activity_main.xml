@@ -24,7 +24,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
-        android:onClick="onAddButtonClick"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/baseline_add_24" />
@@ -36,9 +36,13 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
-        android:onClick="onSubtractButtonClick"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_add"
         app:srcCompat="@drawable/baseline_horizontal_rule_24" />
 
+    <ListView
+        android:id="@+id/list_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>
